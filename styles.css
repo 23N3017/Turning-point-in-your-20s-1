@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" );
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', 'Noto Serif JP';
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #ebf6f7;
+    max-width: 1440px; 
+    margin: 0 auto; 
+    overflow-x: hidden; 
+  }
+  .header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/interview.jpg");
+    background-position: center;
+    background-size: cover;
+    }  
+
+
+
+    nav {
+      width: 100%;
+      text-align: center;
+    }
+
+
+  nav ul {
+    background: #000;
+    width: 100%;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+
+
+  
+  .overview{             
+    margin-top: 5px;
+    margin-bottom: 80px;
+  }
+
+  .overview-details{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .text {
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .title1{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    color: #223a70;
+    background: #d3d3d3;
+  }
+
+
+
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .title2{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    color: #223a70;
+    background: #d3d3d3;
+  }
+  
+
+  .bubble-wrapper {
+    width: 100%;
+    max-width: 800px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .bubble-wrapper .question {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .bubble-wrapper .bubble-answer {
+    text-align: justify; /* 文章を両端揃えにする */
+    line-height: 1.6;   /* 行間を調整して読みやすくする（必要に応じて変更） */
+    word-break: break-word; 
+}
+
+/* 全体のスタイル */
+.bubble-wrapper-1 {
+  padding: 20px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 620px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* 見出しのスタイル */
+.bubble-answer-1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 箇条書き全体のスタイル */
+.styled-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 各リスト項目のスタイル */
+.styled-list li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+ 
+}
+
+/* 番号部分のスタイル */
+.styled-list .number {
+  font-weight: bold;
+  color: #007bff;
+  margin-left: 30px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  min-width: 80px;
+  text-align: left;
+}
+
+/* リスト項目のテキストスタイル */
+.styled-list li span + span {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+  .bubble-wrapper:not(:first-of-type) {
+    margin-top: 40px;
+  }
+  
+  .bubble-wrapper .line-before {
+    position: relative;
+    padding-left: 55px; /* 線と文字の間隔 */
+}
+
+.bubble-wrapper .line-before::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%; /* 線を文字の縦中央に合わせる */
+    transform: translateY(-50%);
+    width: 50px; /* 線の長さを指定 */
+    height: 1px; /* 線の太さ */
+    background-color: black; 
+}
+
+
+.bubble-wrapper .line-before-1 {
+  position: relative;
+  padding-left: 55px; /* 線と文字の間隔 */
+}
+
+.bubble-wrapper .line-before-1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25%; /* 線を文字の縦中央に合わせる */
+  transform: translateY(-50%);
+  width: 50px; /* 線の長さを指定 */
+  height: 1px; /* 線の太さ */
+  background-color: black; 
+}
+  
+  .bubble-wrapper::after {
+    display: block;
+    content: '';
+  }
+  
+  .bubble {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    padding: 20px;
+    padding-left: 50px;
+    border-radius: 20px;
+  }
+
+  .bubble-answer {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    padding: 20px;
+    padding-left: 105px;
+    border-radius: 20px;
+  }
+
+
+  .underline {
+    text-decoration: underline; 
+    text-decoration-color: rgb(210, 173, 230); /* アンダーラインの色を水色に */
+    text-decoration-thickness: 2.5px; /* アンダーラインの太さを調整 */
+}
+
+
+.bubble-answer span.color {
+  animation: color 3s infinite ease-in-out;
+}
+
+@keyframes color {
+  0% { color: #b53fff; }
+  50% { color: #a314e6; } 
+  100% { color: #8f2ffc; }
+}
+
+
+
+
+.memo-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.memo {
+  width: 150px;
+  height: 150px;
+  background-color: #fffdf5;
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px dashed #d4a373;
+}
+
+.memo h3 {
+  font-size: 14px;
+  color: #6a4c93;
+  margin-bottom: 5px;
+}
+
+.memo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  color: #333;
+}
+
+.memo ul li {
+  margin: 5px 0;
+}
+
+
+
+
+  .red {
+    color: red;
+}
+  .blue{
+    color: blue;
+}
+
+
+  nav.sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(22,94,131,0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    z-index: 1000; 
+  }
+  
+  nav.sticky .logo {
+    margin-top: 10px;
+  }
+
+  nav.sticky ul {
+    background-color: transparent;
+    font-size: 1.2rem;
+  }
+  
+
+  
+  .menu-icon {
+    display: none; 
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+
+
+.report {
+  margin-bottom: 80px;
+}
+
+.report-1 {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+  /* 新着記事のスタイル */
+.report-1 {
+  margin-top: 60px;
+  background: white; 
+  border: 2px solid #d3d3d3; 
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.title2 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  color: #223a70;
+  background: none;
+}
+.text_1 {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.title2::after {
+  content: '';
+  display: block;
+  width: 50%; 
+  height: 2px;
+  background-color: #223a70; 
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+
+
+@media screen and (max-width: 390px) {
+  body {
+    max-width: 390px; 
+    margin: 0 auto; 
+  }
+
+  .header {
+    width: 100%;
+    height: 250px;
+    background-image: url("./images/interview.jpg");
+  }
+
+  .container {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }  
+  .menu-icon {
+      display: flex;
+      text-align: right; 
+  }
+
+    .menu {
+      display: none; 
+      flex-direction: column;
+      position: absolute;
+      top: 100%; 
+      left: 0;
+      width: 100%;
+      padding: 20px 0;
+  }
+  
+  .menu.open {
+    display: flex;
+    background-color: #000; 
+    opacity: 0.85;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    top: 80px; /* ヘッダーの下 */
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav ul {
+    display: none; 
+}
+
+  .menu li {
+      list-style: none;
+      text-align: center;
+      margin: 10px 0;
+  }
+
+  .menu li a {
+      text-decoration: none;
+      color: white;
+      font-size: 0.8rem;
+  }  
+
+    nav {
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+  nav ul {
+    background: #000;
+    width: 100%;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .bubble-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .title1{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #223a70;
+    background: #d3d3d3;
+  }
+  .title2 {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    color: #223a70;
+    background: none;
+  }
+  .text_1 {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+}
